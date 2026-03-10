@@ -3,9 +3,9 @@ api_key: sk-**********************
 neo4j:
   uri: "neo4j://127.0.0.1:7687"
   user: "neo4j"
-  password: "*******"
+  password: "02195211"
 
-project_id: "******-****-****-****-****"
+project_id: "6eecbd25-6d19-4ab1-85a2-453e5edd941c"
 
 qwen:
   model: "qwen-plus"

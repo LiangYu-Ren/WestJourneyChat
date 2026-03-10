@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>西游角色档案</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Noto+Serif+SC:wght@400;600;700&family=ZCOOL+XiaoWei&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <img class="hero-banner" src="../pics/top.png" alt="西游记宣传图" />
+        <div class="hero-copy">
+          <p class="eyebrow">Journey To The West Archive</p>
+          <h1>西游角色 & 事件档案</h1>
+          <p class="hero-text">
+            基于角色与事件关系构建西游叙事档案，按角色参与事件展示完整人物脉络与主要事迹。
+          </p>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-label">角色总数</span>
+              <strong id="heroCount">0</strong>
+            </div>
+            <div>
+              <span class="stat-label">当前选中</span>
+              <strong id="selectedName">加载中</strong>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="roster-panel">
+          <div class="panel-head">
+            <div>
+              <p class="panel-kicker">All Characters</p>
+              <h2>角色榜单</h2>
+            </div>
+            <label class="search-box">
+              <span>检索</span>
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="输入角色名或别名"
+              />
+            </label>
+          </div>
+          <div id="rosterGrid" class="roster-grid"></div>
+          <div class="roster-actions">
+            <button id="loadMoreButton" class="load-more-button" type="button">
+              查看更多
+            </button>
+          </div>
+        </section>
+
+        <aside class="detail-panel">
+          <div class="detail-top">
+            <p class="panel-kicker">Character Detail</p>
+            <h2 id="detailName">加载中</h2>
+            <p id="detailAliases" class="alias-line"></p>
+            <div class="detail-summary-shell">
+              <div id="detailDescription" class="detail-description"></div>
+              <div class="summary-progress-track" aria-hidden="true">
+                <div
+                  id="summaryProgressThumb"
+                  class="summary-progress-thumb"
+                ></div>
+              </div>
+            </div>
+            <div class="detail-metrics">
+              <div class="metric-card">
+                <span>参与事件</span>
+                <strong id="detailEventCount">0</strong>
+              </div>
+              <div class="metric-card">
+                <span>性格标签</span>
+                <strong id="detailTraitCount">0</strong>
+              </div>
+            </div>
+            <div id="traitList" class="trait-list"></div>
+          </div>
+
+          <div class="timeline-head">
+            <p class="panel-kicker">Story Records</p>
+            <h3>主要事迹</h3>
+          </div>
+          <div id="eventList" class="event-list"></div>
+        </aside>
+      </main>
+    </div>
+
+    <template id="rosterCardTemplate">
+      <button class="roster-card" type="button">
+        <span class="card-rank"></span>
+        <span class="card-image-wrap">
+          <img class="card-image" alt="" />
+        </span>
+        <span class="card-overlay"></span>
+        <span class="card-body">
+          <strong class="card-name"></strong>
+          <span class="card-count"></span>
+        </span>
+      </button>
+    </template>
+
+    <template id="eventItemTemplate">
+      <article class="event-item">
+        <div class="event-index"></div>
+        <div class="event-body">
+          <h4 class="event-title"></h4>
+          <p class="event-meta"></p>
+          <p class="event-text event-status"></p>
+          <p class="event-text event-decision"></p>
+          <p class="event-text event-result"></p>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
