@@ -113,7 +113,6 @@ python timeline/timeline.py
 
 1. 角色合并结果不符合预期  
    目前按“主名/别名交叉引用 + 简体归一”做并查集合并；若别名不完整，会影响聚合效果。
-
 2. LLM 输出 JSON 解析失败  
    常见于模型返回额外文本或格式不规范，可重试或降低并发/提高提示约束。
 
@@ -137,6 +136,9 @@ python ..\scripts\run_frontend_server.py --port 8000
 
 ## Demo Video
 
-<video src="./bandicam%202026-03-12%2020-52-10-472.mp4" controls width="960"></video>
+<video src="./DemoVideo.mp4" controls width="960"></video>
+
 If the embedded player does not load in your Markdown viewer, open the file directly:
-[bandicam 2026-03-12 20-52-10-472.mp4](./bandicam%202026-03-12%2020-52-10-472.mp4)
+
+<video src="C:\Users\Mr.Smart\Videos\演示视频.mp4"></video>
+
