@@ -58,7 +58,7 @@ qwen:
 
 说明：
 
-​			timeline/timeline.py` 当前主要使用 `api_key`。
+​ timeline/timeline.py`当前主要使用`api_key`。
 
 ---
 
@@ -136,9 +136,7 @@ python ..\scripts\run_frontend_server.py --port 8000
 
 ## Demo Video
 
-<video src="./DemoVideo.mp4" controls width="960"></video>
+<video src="./example-video.mp4" controls width="960"></video>
 
 If the embedded player does not load in your Markdown viewer, open the file directly:
-
-<video src="C:\Users\Mr.Smart\Videos\演示视频.mp4"></video>
-
+[example-video.mp4](./example-video.mp4)
