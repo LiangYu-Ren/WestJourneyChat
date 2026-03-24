@@ -1,4 +1,4 @@
-# ChatPlatformXiyOU
+# ChatPlatformXiYou
 
 ![西游记项目主视觉](pics/top.png)
 
